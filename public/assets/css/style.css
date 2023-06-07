@@ -1,0 +1,41 @@
+*{padding:0;margin:0;outline:none;box-sizing:border-box;}
+body{width:100%;font-family:'Inter',Helvetica,sans-serif;}
+html{scroll-behavior:smooth;font-family:'Inter',Helvetica,sans-serif;}
+a{text-decoration:none;}
+header{width:100%;}
+header .head{height:600px;width:100%;background:linear-gradient(to bottom,#263238 0%,#C22525 100%);padding-top:20px;}
+.whereismyloop-header{width:90%;margin:0 auto;height:80px;background:transparent;display:flex;align-items:center;justify-content:space-between;}
+.sub-menu_download-btn{display:flex;width:80%;align-items:center;justify-content:space-between;}
+.whereismyloop-logo{width:20%;}
+.whereismyloop-logo button{border:none;background-color:transparent;}
+.whereismyloop-sub-menu ul{display:flex;align-items:center;}
+.whereismyloop-sub-menu ul li{list-style:none;margin:0 20px;}
+.whereismyloop-sub-menu ul li a{text-transform:uppercase;font-weight:700;color:#fff;text-decoration:none;font-size:15px;}
+.whereismyloop-sub-menu ul li a::after{position:relative;content:"";height:2px;width:0%;background-color:#fff;display:block;transition:all .2s ease-in;}
+.whereismyloop-sub-menu ul li a:hover::after{width:100%;}
+.whereismyloop-download-btn button:first-child{border-radius:8px;border:none;}
+.whereismyloop-download-btn button:first-child a{font-family:'Inter';text-transform:uppercase;font-size:13px;font-weight:700;color:#263238;display:flex;align-items:center;padding:10px 20px;}
+.whereismyloop-download-btn button:first-child a i{font-size:20px;color:#263238;}
+.whereismyloop-download-btn button:first-child a span{margin-right:10px;}
+.whereismyloop-download-btn button:last-child{display:none;}
+
+
+
+@media screen and (max-width:768px) {
+    body.fixed{position:fixed;}
+    header .head{height:1500px;}
+    .whereismyloop-header{width:100%;padding:0 15px;}
+    .whereismyloop-download-btn button:last-child{display:block;}
+    .whereismyloop-download-btn button:last-child{color:#fff;border:none;background-color:transparent;font-size:30px;}
+    .whereismyloop-download-btn button:first-child{margin-right:20px;}
+    .sub-menu_download-btn{flex-direction:column-reverse;align-items:end;}
+    .whereismyloop-download-btn{display:flex;align-items:center;}
+    .whereismyloop-sub-menu{position:absolute;width:100%;background-color:#263238;right:0;top:115px;bottom:0;}
+    .whereismyloop-sub-menu ul{flex-direction:column;align-items:center;margin-top:15px;}
+    .whereismyloop-download-btn button:first-child a i{font-size:20px;}
+    .whereismyloop-download-btn button:first-child a span{margin-right:5px;}
+    .whereismyloop-download-btn button:first-child a{padding:10px 15px;font-size:14px;}
+    .whereismyloop-sub-menu ul li{margin:5px 0;}
+    .whereismyloop-sub-menu{left:-999px;transition:all .5s ease-in;}
+    .whereismyloop-sub-menu.show{left:0px;}
+}
