@@ -7,6 +7,7 @@
     --700wght:700;
     --light-ash:#F8F8F8;
     --black:#000;
+    --dark-ash:#646464;
 }
 *{padding:0;margin:0;outline:none;box-sizing:border-box;}
 body{width:100%;font-family:var(--inter),Helvetica,sans-serif;}
@@ -69,18 +70,18 @@ main .main{width:100%;background-color:var(--light-ash);padding:50px 0;position:
 .download-qr-scan{width:100%;background-color:var(--white);display:flex;align-items:center;border-radius:16px;padding:15px;}
 .qr-scan-quote p:last-child{font-weight:var(--700wght);font-size:12px;padding-top:10px;}
 .qr-scan-quote p:last-child span{color:#0088FF;}
-.qr-scan-quote p:first-child{font-size:14px;color:#646464;}
+.qr-scan-quote p:first-child{font-size:14px;color:var(--dark-ash);}
 .download-qr-scan .qr-scan{display:flex;justify-content:center;align-items:center;}
 .download-app-image img{width:100%;}
 .download-qr-scan .qr-scan img{width:90%;}
 .main-about-us{padding:30px 0 100px;}
 .about-us-header,.about-us-quote,.about-us-note{text-align:center;}
 .about-us-quote{width:70%;margin:20px auto 0;}
-.about-us-header p{font-size:13px;text-transform:uppercase;color:#646464;}
+.about-us-header p{font-size:13px;text-transform:uppercase;color:var(--dark-ash);}
 .about-us-quote p{font-size:40px;font-family:var(--poppins);line-height:45px;}
 .about-us-quote p,.about-us-header p{font-weight:var(--700wght);}
 .about-us-note{width:65%;margin:15px auto 0;}
-.about-us-note p{color:#646464;font-size:15px;}
+.about-us-note p{color:var(--dark-ash);font-size:15px;}
 .whereismyloop-about-us-img{width:70%;margin:50px auto 0;height:500px;background-image:url(../images/studio.png);background-repeat:no-repeat;background-size:cover;background-position:center;border-radius:8px;}
 .whereismyloop-about-us-img{display:flex;align-items:start;flex-direction:column;justify-content:end;padding:0 0 30px 30px;}
 .whereismyloop-about-us-img p:first-child{color:var(--white);margin-bottom:7px;text-transform:uppercase;font-family:var(--poppins);font-weight:var(--700wght);font-size:12px;}
@@ -98,7 +99,54 @@ main .main{width:100%;background-color:var(--light-ash);padding:50px 0;position:
 .artists-img figure:last-child{margin-right:0;}
 .artists-img figure{margin:0 10px;max-width:140px;}
 .artists-img figure figcaption{font-family:var(--poppins);font-weight:var(--700wght);font-size:14px;margin-top:10px;}
-.artist{width:90%;}
+.main-bottom{width:100%;padding:30px 0 100px;background-color:var(--light-ash);}
+.user-img{text-align:center;display:flex;align-items:center;justify-content:center;}
+.user-img img{position:relative;}
+.user-img img:nth-child(2){margin:0 -50px;z-index:2;}
+.user-img img:first-child{z-index:1;}
+.user-img img:last-child{z-index:3;}
+.loop-bottom{text-align:center;}
+.loop-bottom p{text-transform:uppercase;color:var(--dark-ash);font-weight:var(--700wght);font-size:15px;}
+/* .loop-bottom-user-img{border-bottom:1px solid #F0F0F0;width:95%;margin:0 auto;padding-bottom:15px;} */
+.app-work-header{width:80%;margin:50px auto 0;border-top:1px solid #f0f0f0;padding-top:15px;}
+.app-work-header .work,.app-work-header .work-note{text-align:center;}
+/* .app-work-header .work-note{width:50%;margin:0 auto;} */
+.app-work-header .work-note{margin-top:10px;}
+.app-work-header .work-note p{color:#242424;font-size:14px;}
+.app-work-header .work p{font-family:var(--poppins);font-weight:var(--700wght);font-size:21px;color:var(--dark-red);text-transform:uppercase;}
+.app-work-header .flex-app-work{width:100%;display:flex;margin-top:50px;}
+.flex-one,.flex-two,.flex-three{width:33.33%;height:300px;}
+.flex-one,.flex-two,.flex-three{display:flex;align-items:center;padding:0 10px;}
+.flex-one .playlist-image{width:40%;}
+.flex-one .playlist-image img{width:100%;}
+.flex-one .playlist-note{width:60%;display:flex;align-items:end;}
+.flex-one .playlist-note p,.flex-two .earth-note p,.flex-three .playlist-note p{color:#242424;font-size:14px;}
+.flex-two{justify-content:center;flex-direction:column;padding:10px 20px;}
+.flex-two .earth-image{width:90%;margin:0 auto;}
+.flex-two .earth-image img{width:100%;}
+/* .flex-two .earth-note p{font-size:14px;} */
+.flex-two .earth-note{text-align:center;margin-top:15px;}
+
+.flex-three .playlist-image{width:40%;}
+.flex-three .playlist-image img{width:100%;}
+.flex-three .playlist-note{width:60%;display:flex;align-items:end;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -147,4 +195,5 @@ main .main{width:100%;background-color:var(--light-ash);padding:50px 0;position:
     .about-us-header p{font-size:17px;}
     .about-us-note p{font-size:19px;}
     .whereismyloop-about-us-img{height:250px;padding:0 0 15px 15px;}
+    .artist{width:90%;}
 }
