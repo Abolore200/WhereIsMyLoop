@@ -161,9 +161,11 @@ main .main{width:100%;background-color:var(--light-ash);padding:50px 0;position:
 
 
 
-
-
-@media screen and (max-width:768px) {
+@media screen and (min-width:769px) and (max-width:1000px) {
+    .playlist-images img{width:40%;}
+    .app-work-header{width:95%;}
+}
+@media screen and (max-width:768px){
     body.fixed{position:fixed;}
     header .head{height:initial;}
     .whereismyloop-header{width:100%;padding:0 15px;}
@@ -192,11 +194,11 @@ main .main{width:100%;background-color:var(--light-ash);padding:50px 0;position:
     .main-top-container{flex-direction:column-reverse;width:95%;height:700px;justify-content:start;}
     .main-top-container .container-quote .trynow-btn button a{padding:15px 20px;font-size:18px;}
     .main-top-container .container-images img{height:initial;}
-    .main-top-container .container-quote{padding:40px 0 70px 20px;}
+    .main-top-container .container-quote{padding:40px 10px 70px;}
     .main-top-container .container-quote,.main-top-container .container-images{width:100%;}
     .main-top-container .container-quote .small-quote p{font-size:23px;letter-spacing:0px;}
     .header-big-quote p{font-size:35px;}
-    .header-big-quote{width:80%;margin:0 auto;}
+    .header-big-quote{width:100%;margin:0 auto;}
     /* main .main{margin-top:900px;} */
     .main-download-app{flex-direction:column;width:95%;margin-top:70px;}
     .download-app-image, .download-app-quote{width:100%;}
@@ -209,4 +211,23 @@ main .main{width:100%;background-color:var(--light-ash);padding:50px 0;position:
     .about-us-note p{font-size:19px;}
     .whereismyloop-about-us-img{height:250px;padding:0 0 15px 15px;}
     .artist{width:90%;}
+    .app-work-header{width:95%;}
+    .app-work-header .work-note p{font-size:16px;}
+    .app-work-header .flex-app-work{flex-direction:column;}
+    .flex-one, .flex-two, .flex-three{width:100%;}
+    footer{display:flex;flex-direction:column-reverse;}
+    .flex-one .playlist-note p, .flex-two .earth-note p, .flex-three .playlist-note p{font-size:16px;}
+    .footer-whereismyloop{flex-direction:column;justify-content:center;}
+    .flex-two{padding:0 10px;}
+    .footer-whereismyloop .whereismyloop-footer{justify-content:center;flex-direction:column;margin-bottom:10px;}
+    .footer-whereismyloop .whereismyloop-footer p{margin-top:5px;}
+    .follow{width:90%;margin:0 auto;}
+}
+
+@media screen and (max-width:350px){
+    .user-img img{width:40%;}
+    .footer-whereismyloop .whereismyloop-footer p{text-align:center;}
+    .header-big-quote p{font-size:30px;}
+    .main-top-container .container-quote{padding:40px 10px 0px;}
+    .playlist-images img{width:100%;height:515px;}
 }
